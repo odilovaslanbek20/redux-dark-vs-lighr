@@ -21,13 +21,13 @@ function App() {
 			<div className='flex gap-6'>
 				<Link
 					to='/about'
-					className={`px-6 py-3  text-gray-800 ${isDarkMode ? "text-white bg-black" : "text-black bg-white"} font-semibold rounded-xl shadow-md hover:bg-gray-100 transition duration-300`}
+					className={`px-6 py-3  text-gray-800 border ${!isDarkMode ? "text-white bg-black" : "text-black bg-white"} font-semibold rounded-xl shadow-md transition duration-300`}
 				>
 					ABOUT
 				</Link>
         <Link
 					to='/chiroq'
-					className={`px-6 py-3 bg-white text-gray-800 font-semibold rounded-xl ${isDarkMode ? "text-white bg-black" : "text-black bg-white"} shadow-md hover:bg-gray-100 transition duration-300`}
+					className={`px-6 py-3  text-gray-800 font-semibold rounded-xl border ${!isDarkMode ? "text-white bg-black" : "text-black bg-white"} shadow-md transition duration-300`}
 				>
 					MAIN
 				</Link>
